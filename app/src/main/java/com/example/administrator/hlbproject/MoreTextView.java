@@ -99,6 +99,7 @@ public class MoreTextView extends LinearLayout {
             return;
         }
         isChange=false;
+        
         //初始化默认状态，即正常显示文本
         id_expend_textview.setVisibility(GONE);
         id_source_textview.setMaxLines(Integer.MAX_VALUE);
