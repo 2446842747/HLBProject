@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e7e6e6">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <Spinner
+            android:id="@+id/label_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownVerticalOffset="50dp" />
+        <TextView
+            android:id="@+id/edit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="10dp"
+            android:text="2018-12-1"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:background="#FFFFFF">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="标题"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center"
+            android:background="@drawable/edit_background"/>
+        <EditText
+            android:id="@+id/label_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:hint="输入你的标题"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/edit_background"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="110dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/context_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:minLines="2"
+            android:hint="在这里输入内容"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textCursorDrawable="@null"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+</FrameLayout>

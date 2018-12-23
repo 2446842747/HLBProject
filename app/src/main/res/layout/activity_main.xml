@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#e7e6e6"
+    android:id="@+id/main_frameLayout">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="全部日记"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e7e6e6" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/calendar_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="10dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/press_float"
+        app:rippleColor="@color/colorPrimary"
+        android:src="@drawable/calendar1"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/write_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="45dp"
+        app:backgroundTint="@color/press_float"
+        app:rippleColor="@color/colorPrimary"
+        app:fabSize="normal"
+        android:src="@drawable/write2"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        app:menu_backgroundColor="#ccffffff"
+        app:menu_colorNormal="@color/press_float"
+        app:menu_colorPressed="@color/colorPrimary"
+        android:visibility="gone"
+       >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_anthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/blue_forfloat"
+            app:fab_label="减肥日记"
+            app:fab_size="normal"
+            android:src="@drawable/run"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/blue_forfloat"
+            app:fab_label="标签"
+            app:fab_size="normal"
+            android:src="@drawable/label"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</FrameLayout>
